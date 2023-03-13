@@ -1,0 +1,22 @@
+/////////////////////////////////////////////////////////////////////////////////////////
+/* MODULO / EXPORT de main.js /*/ /////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////
+/* ARROW FUNCTION para cambiar el nombre de la moneda por la abreviatura para la tabla */
+/* recibe como parámetro el ingreso del usuario en el formulario con el id:monedaInput */
+
+export function monedaAbreviada(moneda) {
+  /*   OPERADOR TERNARIO */
+  /*   SWITCH */
+  switch (moneda) {
+    case "Dólares":
+      moneda = "USD";
+      break;
+
+    default:
+      moneda = "EUR";
+      break;
+  }
+  return moneda;
+}
