@@ -2,14 +2,14 @@
 /* MODULOS / IMPORT / importación de funciones */ ///////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 import { alertaCostos } from "./module_index_alerta_costos.js";
-import { monedaAbreviada } from "./module_index_moneda_abreviada.js";
-import { gastosTotalesEnObjeto } from "./module_index_gastos_totales_en_objeto.js";
-import { costosTotalesEnArray } from "./module_index_costos_totales_en_array.js";
 import { alertaDiasYHoras } from "./module_index_alerta_dias_y_horas.js";
 import { alertaGastos } from "./module_index_alerta_gastos.js";
-import { calcularPorHora } from "./module_index_calcular_por_hora.js";
-import { domResultado } from "./module_index_dom_resultado.js";
 import { calcularTotalPorHora } from "./module_index_calclular_total_por_hora.js";
+import { calcularPorHora } from "./module_index_calcular_por_hora.js";
+import { costosTotalesEnArray } from "./module_index_costos_totales_en_array.js";
+import { domResultado } from "./module_index_dom_resultado.js";
+import { gastosTotalesEnObjeto } from "./module_index_gastos_totales_en_objeto.js";
+import { monedaAbreviada } from "./module_index_moneda_abreviada.js";
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /* FUNCIÓN MAIN / función contenedora que ejecuta todas las funciones */ ////////////////
@@ -55,11 +55,11 @@ const main = (e) => {
   ///////////////////////////////////////////////////////////////////////////////////////
 
   /* ejecución de la función que calcula los gastos totales mensuales en un OBJETO */
-  /* se le pasan como parametros los las variables que reciben los valores de los inputs */
+  /* se le pasan como parametros las variables que reciben los valores de los inputs */
   let totalGastos = gastosTotalesEnObjeto(gastosOficina, gastosSoftware);
 
   /* ejecución de la función que calcula los costos totales mensuales en un ARRAY */
-  /* se le pasan como parametros los las variables que reciben los valores de los inputs */
+  /* se le pasan como parametros las variables que reciben los valores de los inputs */
   let totalCostos = costosTotalesEnArray(costosImpuestos, costosOtros);
 
   /* ejecución de la función que calcula costos por hora */
